@@ -1,0 +1,193 @@
+{
+  "asyncapi": "2.6.0",
+  "info": {
+    "title": "Orquestación de Pedidos Event-Driven en NestJS y Renderizado Next.js AsyncAPI Specification",
+    "version": "1.0.0",
+    "description": "Auto-generated AsyncAPI events for Orquestación de Pedidos Event-Driven en NestJS y Renderizado Next.js from Gherkin feature spec."
+  },
+  "defaultContentType": "application/json",
+  "channels": {
+    "orquestacindepedidoseventdrivenennestjsyrenderizadonextjs/events/canonicalordercreated": {
+      "bindings": {
+        "rabbitmq": {
+          "is": "routingKey",
+          "queue": {
+            "name": "orquestacindepedidoseventdrivenennestjsyrenderizadonextjs.canonicalordercreated.queue",
+            "durable": true,
+            "exclusive": false,
+            "autoDelete": false
+          },
+          "bindingVersion": "0.2.0"
+        },
+        "kafka": {
+          "topic": "orquestacindepedidoseventdrivenennestjsyrenderizadonextjs.canonicalordercreated",
+          "partitions": 3,
+          "replicas": 2,
+          "bindingVersion": "0.3.0"
+        }
+      },
+      "publish": {
+        "summary": "Publish CanonicalOrderCreated event",
+        "message": {
+          "name": "CanonicalOrderCreated",
+          "correlationId": {
+            "description": "Correlation ID set in the header",
+            "location": "$message.header#/correlationId"
+          },
+          "headers": {
+            "type": "object",
+            "properties": {
+              "correlationId": {
+                "type": "string",
+                "format": "uuid",
+                "description": "Correlation ID for distributed tracing"
+              },
+              "causationId": {
+                "type": "string",
+                "format": "uuid",
+                "description": "ID of the event/command that caused this event"
+              },
+              "schemaVersion": {
+                "type": "string",
+                "default": "1.0"
+              },
+              "retryCount": {
+                "type": "integer",
+                "default": 0
+              },
+              "dlqReason": {
+                "type": "string",
+                "description": "Reason for moving to DLQ (if applicable)"
+              }
+            },
+            "required": [
+              "correlationId",
+              "schemaVersion"
+            ]
+          },
+          "payload": {
+            "type": "object",
+            "properties": {
+              "eventId": {
+                "type": "string",
+                "format": "uuid"
+              },
+              "occurredOn": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "eventType": {
+                "type": "string",
+                "enum": [
+                  "CanonicalOrderCreated"
+                ]
+              },
+              "payload": {
+                "type": "object",
+                "properties": {},
+                "required": []
+              }
+            },
+            "required": [
+              "eventId",
+              "occurredOn",
+              "eventType",
+              "payload"
+            ]
+          }
+        }
+      }
+    },
+    "orquestacindepedidoseventdrivenennestjsyrenderizadonextjs/events/nextjsapprouterdeberecibiractualizacinmedianteserversentevenevent": {
+      "bindings": {
+        "rabbitmq": {
+          "is": "routingKey",
+          "queue": {
+            "name": "orquestacindepedidoseventdrivenennestjsyrenderizadonextjs.nextjsapprouterdeberecibiractualizacinmedianteserversentevenevent.queue",
+            "durable": true,
+            "exclusive": false,
+            "autoDelete": false
+          },
+          "bindingVersion": "0.2.0"
+        },
+        "kafka": {
+          "topic": "orquestacindepedidoseventdrivenennestjsyrenderizadonextjs.nextjsapprouterdeberecibiractualizacinmedianteserversentevenevent",
+          "partitions": 3,
+          "replicas": 2,
+          "bindingVersion": "0.3.0"
+        }
+      },
+      "publish": {
+        "summary": "Publish NextjsAppRouterDebeRecibirActualizacinMedianteServerSentEvenEvent event",
+        "message": {
+          "name": "NextjsAppRouterDebeRecibirActualizacinMedianteServerSentEvenEvent",
+          "correlationId": {
+            "description": "Correlation ID set in the header",
+            "location": "$message.header#/correlationId"
+          },
+          "headers": {
+            "type": "object",
+            "properties": {
+              "correlationId": {
+                "type": "string",
+                "format": "uuid",
+                "description": "Correlation ID for distributed tracing"
+              },
+              "causationId": {
+                "type": "string",
+                "format": "uuid",
+                "description": "ID of the event/command that caused this event"
+              },
+              "schemaVersion": {
+                "type": "string",
+                "default": "1.0"
+              },
+              "retryCount": {
+                "type": "integer",
+                "default": 0
+              },
+              "dlqReason": {
+                "type": "string",
+                "description": "Reason for moving to DLQ (if applicable)"
+              }
+            },
+            "required": [
+              "correlationId",
+              "schemaVersion"
+            ]
+          },
+          "payload": {
+            "type": "object",
+            "properties": {
+              "eventId": {
+                "type": "string",
+                "format": "uuid"
+              },
+              "occurredOn": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "eventType": {
+                "type": "string",
+                "enum": [
+                  "NextjsAppRouterDebeRecibirActualizacinMedianteServerSentEvenEvent"
+                ]
+              },
+              "payload": {
+                "type": "object",
+                "properties": {},
+                "required": []
+              }
+            },
+            "required": [
+              "eventId",
+              "occurredOn",
+              "eventType",
+              "payload"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Orquestación de Pedidos Event-Driven en NestJS y Renderizado Next.js API Specification",
+    "version": "1.0.0",
+    "description": "Auto-generated OpenAPI specification for Orquestación de Pedidos Event-Driven en NestJS y Renderizado Next.js from Gherkin feature spec."
+  },
+  "paths": {
+    "/api/v1/orquestaci-n-de-pedidos-event-driven-en-nestjs-y-renderizado-next-js": {
+      "post": {
+        "summary": "POST /api/v1/orquestaci-n-de-pedidos-event-driven-en-nestjs-y-renderizado-next-js",
+        "operationId": "unknownOrquestacindePedidosEventDrivenenNestJSyRenderizadoNextjs",
+        "security": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "requestId": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "timestamp": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "payload": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                  }
+                },
+                "required": [
+                  "requestId",
+                  "timestamp",
+                  "payload"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  }
+}
