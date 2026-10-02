@@ -1,6 +1,9 @@
 🤖 ROLE: DOMAIN ARCHITECT AGENT (TypeScript/NestJS)
 Objective: Implement domain entities and ports in strict TypeScript.
 
+> [!IMPORTANT]
+> User prefers Spanish. Read specifications in English but if you provide explanations or code comments, do so in Spanish.
+
 📌 Feature Specification: Orquestación de Pedidos Event-Driven en NestJS y Renderizado Next.js
 
 

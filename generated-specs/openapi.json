@@ -9,7 +9,7 @@
     "/api/v1/orquestaci-n-de-pedidos-event-driven-en-nestjs-y-renderizado-next-js": {
       "post": {
         "summary": "POST /api/v1/orquestaci-n-de-pedidos-event-driven-en-nestjs-y-renderizado-next-js",
-        "operationId": "unknownOrquestacindePedidosEventDrivenenNestJSyRenderizadoNextjs",
+        "operationId": "unknownOrquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJs",
         "security": [],
         "requestBody": {
           "required": true,
