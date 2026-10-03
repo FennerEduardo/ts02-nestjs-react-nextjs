@@ -35,8 +35,8 @@ export interface Event2 extends IDomainEvent {
 // 2. Command DTO Schemas (Zod Validation)
 // --------------------------------------------------------------------------
 export const OrquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJsCommandSchema = z.object({
-  requestId: z.string().uuid(),
-  timestamp: z.string().datetime(),
+  requestId: z.uuid(),
+  timestamp: z.iso.datetime(),
   payload: z.object({
 
   })
