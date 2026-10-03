@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
-import { OrquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJs } from '@prisma/client';
+import type { OrquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJs } from '@prisma/client';
 
 @Injectable()
 export class OrquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJsRepository {
