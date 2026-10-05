@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from 'vitest';
-import { ApiError, COMMANDS, createOrquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJsClient } from './orquestacion-de-pedidos-event-driven-en-nest-js-y-renderizado-next-js-client';
+import { ApiError, COMMANDS, createOrquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJsClient, newTraceparent } from './orquestacion-de-pedidos-event-driven-en-nest-js-y-renderizado-next-js-client';
 
 function fakeFetch(status: number, body: unknown) {
   return vi.fn(async (_url: RequestInfo | URL, _init?: RequestInit) => new Response(JSON.stringify(body), { status, headers: { 'Content-Type': 'application/json' } }));
@@ -23,6 +23,30 @@ describe('OrquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJs API client'
     expect((init?.headers as Record<string, string>)['X-Tenant-Id']).toBe('acme');
     expect((init?.headers as Record<string, string>)['X-Idempotency-Key']).toBe('key-1');
     expect(JSON.parse(String(init?.body))).toEqual({ amount: 100 });
+  });
+
+  it('sends a W3C traceparent that starts a new trace per request', async () => {
+    const fetch = fakeFetch(201, { type: 'CanonicalOrderCreated', aggregateId: 'agg-1', version: 1 });
+    const client = createOrquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJsClient({ fetch });
+
+    await client.execute('agg-1', 'process_orquestacion_de_pedidos_event_driven_en_nest_js_y_renderizado_next_js');
+    await client.execute('agg-1', 'process_orquestacion_de_pedidos_event_driven_en_nest_js_y_renderizado_next_js');
+
+    const sent = fetch.mock.calls.map(([, init]) => (init?.headers as Record<string, string>).traceparent);
+    for (const traceparent of sent) expect(traceparent).toMatch(/^00-[0-9a-f]{32}-[0-9a-f]{16}-01$/);
+    expect(sent[0]).not.toBe(sent[1]);
+    expect(newTraceparent()).toMatch(/^00-[0-9a-f]{32}-[0-9a-f]{16}-01$/);
+  });
+
+  it('propagates the caller trace context or none when disabled', async () => {
+    const traced = fakeFetch(201, {});
+    const parent = '00-4bf92f3577b34da6a3ce929d0e0e4736-00f067aa0ba902b7-01';
+    await createOrquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJsClient({ fetch: traced, traceparent: () => parent }).execute('agg-1', 'process_orquestacion_de_pedidos_event_driven_en_nest_js_y_renderizado_next_js');
+    expect((traced.mock.calls[0][1]?.headers as Record<string, string>).traceparent).toBe(parent);
+
+    const untraced = fakeFetch(201, {});
+    await createOrquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJsClient({ fetch: untraced, traceparent: false }).execute('agg-1', 'process_orquestacion_de_pedidos_event_driven_en_nest_js_y_renderizado_next_js');
+    expect((untraced.mock.calls[0][1]?.headers as Record<string, string>).traceparent).toBeUndefined();
   });
 
   it('raises ApiError with the server detail on failure', async () => {

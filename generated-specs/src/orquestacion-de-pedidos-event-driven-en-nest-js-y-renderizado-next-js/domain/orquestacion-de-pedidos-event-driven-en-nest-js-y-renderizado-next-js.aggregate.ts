@@ -34,6 +34,14 @@ export class OrquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJsAggregate
     if (!id || !id.trim()) throw new DomainValidationError('OrquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJs id is required');
   }
 
+  /** Rebuilds an aggregate from persisted state; no events are recorded. */
+  static restore(id: string, state: OrquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJsState, version: number): OrquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJsAggregate {
+    const aggregate = new OrquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJsAggregate(id);
+    aggregate._state = state;
+    aggregate._version = version;
+    return aggregate;
+  }
+
   get state(): OrquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJsState {
     return this._state;
   }
