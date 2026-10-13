@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
+import { currentTenant } from '../infrastructure/multitenancy/tenant.storage';
 import type { OrquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJs } from '@prisma/client';
 
 @Injectable()
@@ -10,9 +11,10 @@ export class OrquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJsRepositor
     return this.prisma.tenant.orquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJs.findUnique({ where: { id } });
   }
 
+  /** Creates a row for the tenant of the authenticated request (never a default tenant). */
   async save(data: Omit<OrquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJs, 'id' | 'tenantId' | 'createdAt' | 'updatedAt'>): Promise<OrquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJs> {
     return this.prisma.tenant.orquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJs.create({
-      data,
+      data: { ...data, tenantId: currentTenant() },
     });
   }
 

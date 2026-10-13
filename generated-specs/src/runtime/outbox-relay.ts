@@ -15,7 +15,7 @@ export interface Topology {
 export function topology(prefix = 'orquestacion-de-pedidos-event-driven-en-nest-js-y-renderizado-next-js'): Topology {
   return { exchange: `${prefix}.events`, queue: `${prefix}.consumer`, dlx: `${prefix}.dlx`, dlq: `${prefix}.dlq` };
 }
-export const DEFAULT_TOPOLOGY: Topology = {"exchange":"orquestacion-de-pedidos-event-driven-en-nest-js-y-renderizado-next-js.events","queue":"orquestacion-de-pedidos-event-driven-en-nest-js-y-renderizado-next-js.consumer","dlx":"orquestacion-de-pedidos-event-driven-en-nest-js-y-renderizado-next-js.dlx","dlq":"orquestacion-de-pedidos-event-driven-en-nest-js-y-renderizado-next-js.dlq"};
+export const DEFAULT_TOPOLOGY: Topology = {"exchange":"transactional-system-nestjs-nextjs.events","queue":"transactional-system-nestjs-nextjs.consumer","dlx":"transactional-system-nestjs-nextjs.dlx","dlq":"transactional-system-nestjs-nextjs.dlq"};
 
 /** Topic exchange -> consumer queue, which dead-letters rejected messages to a fanout DLX -> DLQ. */
 export async function declareTopology(channel: Channel, t: Topology = DEFAULT_TOPOLOGY): Promise<void> {
