@@ -58,4 +58,9 @@ describe('OrquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJs HTTP applic
     const res = await post(`/api/v1/orquestacion-de-pedidos-event-driven-en-nest-js-y-renderizado-next-js/${randomUUID()}/no_such_command`, { authorization: token({ [TENANT_CLAIM]: tenant }) });
     expect(res.status).toBe(422);
   });
+
+  it('reports liveness and database readiness without a token', async () => {
+    expect((await fetch(`${base}/health`)).status).toBe(200);
+    expect((await fetch(`${base}/health/ready`)).status).toBe(200);
+  });
 });

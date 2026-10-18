@@ -6,9 +6,9 @@
     "description": "Service API of transactional-system-nestjs-nextjs, merged from 1 feature contract(s) in contracts/."
   },
   "paths": {
-    "/api/v1/orquestaci-n-de-pedidos-event-driven-en-nestjs-y-renderizado-next-js": {
+    "/api/v1/orquestacion-de-pedidos-event-driven-en-nest-js-y-renderizado-next-js": {
       "post": {
-        "summary": "POST /api/v1/orquestaci-n-de-pedidos-event-driven-en-nestjs-y-renderizado-next-js",
+        "summary": "POST /api/v1/orquestacion-de-pedidos-event-driven-en-nest-js-y-renderizado-next-js",
         "operationId": "unknownOrquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJs",
         "security": [],
         "requestBody": {
