@@ -1,0 +1,433 @@
+{
+  "version": "2",
+  "cliVersion": "3.2.1",
+  "features": {
+    "features/order_orchestration.feature": {
+      "checksum": "ad59ab0934df1351e38c14dfd6c84c18496b2595c163c08144ed058019df1508",
+      "contracts": {
+        "contracts/order-orchestration/ADR-OrquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJs.md": "9ba8fea8e36ec8a0fc7bbdcdb92566e0c008e75a0b765c9184d33db718a0bde6",
+        "contracts/order-orchestration/openapi.json": "939e17de57cf4036d85a3a901eafd0aab9e723e4d092223cb9e8bfa673e73787",
+        "openapi.json": "0aca8bc29a247256ef673775b31166a7e72f786c28269f819df0469268317e12",
+        "contracts.ts": "82bd38dd3ca17ae516fd21a00517d768c94ae6c72b69185848c18d3c1ea76cff",
+        "contracts/order-orchestration/asyncapi.json": "f95767d032a5cdee4ebc86c078c3f7c617a94c4030303a6d1095ee3d65bf41cb",
+        "asyncapi.json": "7daadef72afdede881a9319153b556d2d35874c44e520654a02cb05181e94b72"
+      }
+    }
+  },
+  "artifacts": [
+    {
+      "filePath": ".dockerignore",
+      "type": "test",
+      "checksum": "24a2d166089e691663ae1f8440d87dcff0d08b861e09b4becd5d1c8d048c8fae",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": ".env.example",
+      "type": "config",
+      "checksum": "a7ef4675c32e3946def4298ff4aa84158716d46818801b43121c29383c4541c6",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "ADR-001-architecture-decisions.md",
+      "type": "other",
+      "checksum": "9ba8fea8e36ec8a0fc7bbdcdb92566e0c008e75a0b765c9184d33db718a0bde6",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "asyncapi.json",
+      "type": "contract",
+      "checksum": "7daadef72afdede881a9319153b556d2d35874c44e520654a02cb05181e94b72",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "contracts.ts",
+      "type": "contract",
+      "checksum": "82bd38dd3ca17ae516fd21a00517d768c94ae6c72b69185848c18d3c1ea76cff",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "contracts/order-orchestration/ADR-OrquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJs.md",
+      "type": "other",
+      "checksum": "9ba8fea8e36ec8a0fc7bbdcdb92566e0c008e75a0b765c9184d33db718a0bde6",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "contracts/order-orchestration/asyncapi.json",
+      "type": "contract",
+      "checksum": "f95767d032a5cdee4ebc86c078c3f7c617a94c4030303a6d1095ee3d65bf41cb",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "contracts/order-orchestration/openapi.json",
+      "type": "openapi",
+      "checksum": "939e17de57cf4036d85a3a901eafd0aab9e723e4d092223cb9e8bfa673e73787",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "cucumber.js",
+      "type": "test",
+      "checksum": "c26c8fcfc25e83d0713b8d30a381a69d17e7f8ed37100c40d245ffd762600697",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "docker-compose.yml",
+      "type": "config",
+      "checksum": "8fd52af5c7100dc3f912107b50f692774e3885da72fd2742467a9c92467c90fa",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "Dockerfile",
+      "type": "test",
+      "checksum": "ee4ab0da1eef85e8a03bfda1172eae71a3483c61570b2becb026289f0bac88f2",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "features/order_orchestration.feature",
+      "type": "other",
+      "checksum": "ad59ab0934df1351e38c14dfd6c84c18496b2595c163c08144ed058019df1508",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "fixtures.ts",
+      "type": "fixture",
+      "checksum": "9d77cfe8dfb5a917a7361d89bcce453bccb50432c827328d02cfc363df189308",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "frontend/app/layout.tsx",
+      "type": "test",
+      "checksum": "7be6507004003db99ab9c4130d935076ca96b08c996e75070821befe91655fcf",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "frontend/app/page.tsx",
+      "type": "test",
+      "checksum": "e2ff710fa168fb4099ac1b2074682a612bb4296bd52a7b968df7207cb505569e",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "frontend/components/OrquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJsPanel.test.tsx",
+      "type": "test",
+      "checksum": "2c5c98b8736335f2822e52debb3c73aed51122b465a6d0572524c24d8a9ec716",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "frontend/components/OrquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJsPanel.tsx",
+      "type": "test",
+      "checksum": "894f70570279b8a0dfe29effb4c798caa6473a31e2fef31459b0589b17bc84fb",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "frontend/lib/orquestacion-de-pedidos-event-driven-en-nest-js-y-renderizado-next-js-client.test.ts",
+      "type": "test",
+      "checksum": "c5bacd6496be698bbb9fc26b299ac8074eeff7aee0d6a56c11f7e85601a3ed60",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "frontend/lib/orquestacion-de-pedidos-event-driven-en-nest-js-y-renderizado-next-js-client.ts",
+      "type": "test",
+      "checksum": "f0dcebf8d387779283b8f21d24f934dadb3d0df04ce34b7401b82d5e5400cca6",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "frontend/next.config.mjs",
+      "type": "test",
+      "checksum": "c522c3c5a8c16893b845a25039688c6487f7b0c3a1a1c3cd97e9328ba137984c",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "frontend/package.json",
+      "type": "test",
+      "checksum": "f07a9bad1d2f22d53765bb528d0940ce6678094b68ddc1b4ecda9c6237d0ae89",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "frontend/tsconfig.json",
+      "type": "test",
+      "checksum": "d8ca0f917adfceb2fa478cc0bf1bc3989abd31a52caf085d224c23596b77d0da",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "frontend/vitest.config.mts",
+      "type": "test",
+      "checksum": "80905bb117b39ec6ac8423a4342c7e2253e5fe9e266b28a12442045cc295d896",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "frontend/vitest.setup.ts",
+      "type": "test",
+      "checksum": "91a3c8962a0edcb956206a501d943fe99e1c78c6d4d8b5c9a948a3362c75978c",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "jest.config.js",
+      "type": "test",
+      "checksum": "456021a6d978206c28abfd7b4ae4925a867b1626edd7515309877700831809f4",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "jest.integration.config.js",
+      "type": "test",
+      "checksum": "33884f0f1fdd1199be1d8a790765b6ec5b411aa9df06f28a7bfc94273209eff8",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "openapi.json",
+      "type": "openapi",
+      "checksum": "0aca8bc29a247256ef673775b31166a7e72f786c28269f819df0469268317e12",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "package.json",
+      "type": "config",
+      "checksum": "938373929fc9b1579b3b6d3dbe9c46933d3439672244f8db115b4bc5c04a106f",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "prisma/schema.prisma",
+      "type": "other",
+      "checksum": "1413d0d2c155281d53dc8f13b457bb25101a56eb168cc594c64819fcfb6b6163",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "prompts/backend-agent.md",
+      "type": "prompt",
+      "checksum": "ca80773822f888519a27332081f0be879d7bd1bcffa3d7a1db8bab9792f29a59",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "prompts/domain-agent.md",
+      "type": "prompt",
+      "checksum": "a57565cb0574caef2d5fc591b81658b43da52189234cfd77a2110fa5325a5e7a",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "prompts/qa-agent.md",
+      "type": "prompt",
+      "checksum": "bacf93c36c7459d0a0000a84c30c756598736b167f8486f9370a2ff1927fc41b",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "seed.sql",
+      "type": "fixture",
+      "checksum": "328bd8dc0eca083d9deaf2ada617a34f81a892c6c54dd87a35e5437d6902a104",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "src/app.module.ts",
+      "type": "test",
+      "checksum": "76e4a3e859273387d7ae4660f553c9a6ed609e5379306d23b8edb6f842713079",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "src/auth/jwt-tenant.guard.ts",
+      "type": "test",
+      "checksum": "1d0325fc16554059ea85af84e9ae3137b42c101273b3b2c90cab29e578fc87ad",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "src/auth/jwt.ts",
+      "type": "test",
+      "checksum": "07db0c61a52420a9c6a7f8809ef966c8b3f4a51d8d55d20df26a57d0aa366b7a",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "src/infrastructure/multitenancy/tenant.storage.ts",
+      "type": "test",
+      "checksum": "09819f6dfb6c404979fcb90f286c74a398faf0f5adbbe64bb54c17279d3a9d33",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "src/main.ts",
+      "type": "test",
+      "checksum": "a41749b02f03bfb845b683567632ead58f3b3f272b8c13af680b713fa20c4692",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "src/orquestacion-de-pedidos-event-driven-en-nest-js-y-renderizado-next-js/domain/orquestacion-de-pedidos-event-driven-en-nest-js-y-renderizado-next-js.aggregate.spec.ts",
+      "type": "test",
+      "checksum": "8cf3b40d825c6b39d761eb7c2aa135561470cd39dd27aadb1cbff9c9142cbde8",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "src/orquestacion-de-pedidos-event-driven-en-nest-js-y-renderizado-next-js/domain/orquestacion-de-pedidos-event-driven-en-nest-js-y-renderizado-next-js.aggregate.ts",
+      "type": "test",
+      "checksum": "83abc9e7e31fe165dede37a614e9358b223269edb7be477425c2eeca91bd158d",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "src/orquestacion-de-pedidos-event-driven-en-nest-js-y-renderizado-next-js/orquestacion-de-pedidos-event-driven-en-nest-js-y-renderizado-next-js.controller.ts",
+      "type": "test",
+      "checksum": "ce7b40990ca9895d45d166568dbbfc4a0c3f015d82f6632b18314561b7a28c01",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "src/orquestacion-de-pedidos-event-driven-en-nest-js-y-renderizado-next-js/orquestacion-de-pedidos-event-driven-en-nest-js-y-renderizado-next-js.module.ts",
+      "type": "test",
+      "checksum": "abb060a5386fbc2d7cfb85ac2517999766eaaa8d18aff6ea5cf46f073f5c0aec",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "src/persistence/orquestaciondepedidoseventdrivenennestjsyrenderizadonextjs.repository.ts",
+      "type": "other",
+      "checksum": "f6f7381e7808253969893421672c0b67ba3a3496e9dbb2504cbba579bf423784",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "src/prisma/prisma.service.ts",
+      "type": "test",
+      "checksum": "d948ce80a568086fb8f9989cc8174634ed6f62ccd0ed7ee8a037ec81ec71eb95",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "src/runtime/broker.ts",
+      "type": "test",
+      "checksum": "31e3ac89176678931eb44a2fdd9b240f6e63f21ebe69fbc7846d7d841701f4d3",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "src/runtime/command-service.ts",
+      "type": "test",
+      "checksum": "b4a71a4c0a8d0720b89cea6b7e1c95201c0e0b21e3170a799c999f95c18eabc6",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "src/runtime/inbox-consumer.ts",
+      "type": "test",
+      "checksum": "26d6a1e1a55df645ae981184c67684830220ef6aa62e11385af4e2ca884672ea",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "src/runtime/index.ts",
+      "type": "test",
+      "checksum": "4ebaa60432adad597200b0b234230edd23f26aac818db06c41f0fa71267e48cb",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "src/runtime/otel.ts",
+      "type": "test",
+      "checksum": "b44de2813b2b54a5af31809c91ac13ab296f17b459a3c460ea012ef0b0254709",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "src/runtime/outbox-relay.ts",
+      "type": "test",
+      "checksum": "edc22e6f853e656fe848832fa7731b634b4b6857c4027db0d474dda53fdbeb52",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "src/runtime/runtime.module.ts",
+      "type": "test",
+      "checksum": "b8c12c7513bd1ca94d6e4f7d5f02d137f9f19e581a9c8405ac7b21356b9210ec",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "src/runtime/saga.ts",
+      "type": "test",
+      "checksum": "f6200104da1c78817893f2c6a52e4c58367c83059e423a39e4747a81421e698b",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "src/runtime/schema.ts",
+      "type": "test",
+      "checksum": "0bbb8b670d44558bc5a97691265540380397de23680b4fa9c12eba2f88800255",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "src/runtime/telemetry.ts",
+      "type": "test",
+      "checksum": "f9d9912a845f7e36cbf97b0101d4f220095536730f469146d58efc5f5b26bdea",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "test/integration/orquestacion-de-pedidos-event-driven-en-nest-js-y-renderizado-next-js.http.int-spec.ts",
+      "type": "test",
+      "checksum": "6f5255ab174f505f5c88bb448a9a146408d5fe9731c49cae06729265a567e4c6",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "test/integration/runtime.int-spec.ts",
+      "type": "test",
+      "checksum": "6ef0d70fcf64d7de9195672136ef51f62562c2a1b45346606878b9a87d150099",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "test/steps/orquestacion-de-pedidos-event-driven-en-nest-js-y-renderizado-next-js.steps.ts",
+      "type": "test",
+      "checksum": "e82db0da1463012d2069fc7ee706a3bfe7298e2434462142ce9884f6aae2260d",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "tsconfig.build.json",
+      "type": "test",
+      "checksum": "cca65441174fe56cd889690dc8fe916f176597b99c8d2fcc29395b987992257e",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    },
+    {
+      "filePath": "tsconfig.json",
+      "type": "test",
+      "checksum": "3d5f419774b303fe446cb8d9f4ba70123461288769a27275f042de6cb70d52a1",
+      "feature": "features/order_orchestration.feature",
+      "generatedAt": "2026-10-25T05:55:45.960Z"
+    }
+  ],
+  "executions": []
+}
