@@ -1,6 +1,6 @@
 {
   "version": "2",
-  "cliVersion": "3.2.1",
+  "cliVersion": "3.2.2",
   "features": {
     "features/order_orchestration.feature": {
       "checksum": "ad59ab0934df1351e38c14dfd6c84c18496b2595c163c08144ed058019df1508",
@@ -8,7 +8,7 @@
         "contracts/order-orchestration/ADR-OrquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJs.md": "9ba8fea8e36ec8a0fc7bbdcdb92566e0c008e75a0b765c9184d33db718a0bde6",
         "contracts/order-orchestration/openapi.json": "939e17de57cf4036d85a3a901eafd0aab9e723e4d092223cb9e8bfa673e73787",
         "openapi.json": "0aca8bc29a247256ef673775b31166a7e72f786c28269f819df0469268317e12",
-        "contracts.ts": "82bd38dd3ca17ae516fd21a00517d768c94ae6c72b69185848c18d3c1ea76cff",
+        "contracts.ts": "13ed2fb2162f7889941b8d67d67e927597847f030eae07a5850c09f7621a0fb5",
         "contracts/order-orchestration/asyncapi.json": "f95767d032a5cdee4ebc86c078c3f7c617a94c4030303a6d1095ee3d65bf41cb",
         "asyncapi.json": "7daadef72afdede881a9319153b556d2d35874c44e520654a02cb05181e94b72"
       }
@@ -46,9 +46,9 @@
     {
       "filePath": "contracts.ts",
       "type": "contract",
-      "checksum": "82bd38dd3ca17ae516fd21a00517d768c94ae6c72b69185848c18d3c1ea76cff",
+      "checksum": "13ed2fb2162f7889941b8d67d67e927597847f030eae07a5850c09f7621a0fb5",
       "feature": "features/order_orchestration.feature",
-      "generatedAt": "2026-10-25T05:55:45.960Z"
+      "generatedAt": "2026-10-30T20:47:52.629Z"
     },
     {
       "filePath": "contracts/order-orchestration/ADR-OrquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJs.md",
