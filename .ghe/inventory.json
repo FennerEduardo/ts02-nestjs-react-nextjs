@@ -1,6 +1,6 @@
 {
   "version": "2",
-  "cliVersion": "3.2.2",
+  "cliVersion": "3.3.0",
   "features": {
     "features/order_orchestration.feature": {
       "checksum": "ad59ab0934df1351e38c14dfd6c84c18496b2595c163c08144ed058019df1508",
@@ -8,7 +8,7 @@
         "contracts/order-orchestration/ADR-OrquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJs.md": "9ba8fea8e36ec8a0fc7bbdcdb92566e0c008e75a0b765c9184d33db718a0bde6",
         "contracts/order-orchestration/openapi.json": "939e17de57cf4036d85a3a901eafd0aab9e723e4d092223cb9e8bfa673e73787",
         "openapi.json": "0aca8bc29a247256ef673775b31166a7e72f786c28269f819df0469268317e12",
-        "contracts.ts": "13ed2fb2162f7889941b8d67d67e927597847f030eae07a5850c09f7621a0fb5",
+        "contracts.ts": "5e058afd5ab9028750fbec6235331274e1f12b3f8a43d0a750ac976cf70fad9c",
         "contracts/order-orchestration/asyncapi.json": "f95767d032a5cdee4ebc86c078c3f7c617a94c4030303a6d1095ee3d65bf41cb",
         "asyncapi.json": "7daadef72afdede881a9319153b556d2d35874c44e520654a02cb05181e94b72"
       }
@@ -25,9 +25,9 @@
     {
       "filePath": ".env.example",
       "type": "config",
-      "checksum": "a7ef4675c32e3946def4298ff4aa84158716d46818801b43121c29383c4541c6",
+      "checksum": "7ee4b369f6e88ddac55a9ad4d239cecdc99f4fc856b89e086dbe265c002bc1b6",
       "feature": "features/order_orchestration.feature",
-      "generatedAt": "2026-10-25T05:55:45.960Z"
+      "generatedAt": "2026-11-03T13:48:27.038Z"
     },
     {
       "filePath": "ADR-001-architecture-decisions.md",
@@ -46,9 +46,9 @@
     {
       "filePath": "contracts.ts",
       "type": "contract",
-      "checksum": "13ed2fb2162f7889941b8d67d67e927597847f030eae07a5850c09f7621a0fb5",
+      "checksum": "5e058afd5ab9028750fbec6235331274e1f12b3f8a43d0a750ac976cf70fad9c",
       "feature": "features/order_orchestration.feature",
-      "generatedAt": "2026-10-30T20:47:52.629Z"
+      "generatedAt": "2026-11-03T13:48:27.038Z"
     },
     {
       "filePath": "contracts/order-orchestration/ADR-OrquestacionDePedidosEventDrivenEnNestJsYRenderizadoNextJs.md",
@@ -81,9 +81,9 @@
     {
       "filePath": "docker-compose.yml",
       "type": "config",
-      "checksum": "8fd52af5c7100dc3f912107b50f692774e3885da72fd2742467a9c92467c90fa",
+      "checksum": "dea1855d79784dafed077fa7b3be8d1fb241af7628e673915eddd2cc09a67ff8",
       "feature": "features/order_orchestration.feature",
-      "generatedAt": "2026-10-25T05:55:45.960Z"
+      "generatedAt": "2026-11-03T13:48:27.038Z"
     },
     {
       "filePath": "Dockerfile",
@@ -214,9 +214,9 @@
     {
       "filePath": "prisma/schema.prisma",
       "type": "other",
-      "checksum": "1413d0d2c155281d53dc8f13b457bb25101a56eb168cc594c64819fcfb6b6163",
+      "checksum": "44d5c8adaae9919d28623cce532d755109217a777658301970489743ec82454a",
       "feature": "features/order_orchestration.feature",
-      "generatedAt": "2026-10-25T05:55:45.960Z"
+      "generatedAt": "2026-11-03T13:48:27.038Z"
     },
     {
       "filePath": "prompts/backend-agent.md",
